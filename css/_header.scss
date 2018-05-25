@@ -1,0 +1,106 @@
+@import "palette";
+@import "layout";
+@import "fonts";
+@import "globalMixins";
+@import "globalFunctions";
+
+@mixin navCounters {
+  color: white;
+  width: auto;
+  display: inline-block;
+  min-width: 20px;
+  max-width: 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 3px;
+  @include transition;
+  font: {
+    size: fluidFont(8px);
+    family: 'Aller Light', sans-serif;
+  }
+}
+
+header {
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+  }
+  .navbar-collapse.collapse {
+    display: flex !important;
+  }
+  #upperNav {
+    height: fluidFont(65px);
+    .brand {
+      margin-left: $side;
+      padding-left: fluidFont(55px);
+      background: url("../img/hexagons-svgrepo-com.svg") no-repeat;
+      @include transition;
+      &:hover {
+        transform: scale(0.9);
+        @include transition;
+      }
+      #logo {
+        color: $color1;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font: {
+          size: fluidFont(26px);
+          family: "Aller Light", Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+    form {
+      margin-right: $side;
+      i {
+        padding-right: $commonPadding;
+        color: $color7;
+        @include transition;
+        font-size: fluidFont(16px);
+        &:hover {
+          color: white;
+          @include transition;
+        }
+      }
+      //a {
+      //  height: 49px;
+      //  color: #131211;
+      //  @include transition;
+      //  padding: 18px 22px 18px 22px;
+      //  background-color: #242424;
+      //  border: {
+      //    bottom: none;
+      //    top: none;
+      //    left: 1px solid #131211;
+      //    right: 1px solid #131211;
+      //    radius: 0;
+      //  }
+      //  &:hover {
+      //    color: white;
+      //    @include transition;
+      //  }
+      //  font: {
+      //    family: 'Aller Light', Arial, Helvetica, sans-serif;
+      //    size: fluidFont(11px);
+      //  }
+      //  span {
+      //    text-transform: uppercase;
+      //  }
+      //}
+    }
+  }
+  #divider {
+    height: fluidFont(3px);
+    background-image: radial-gradient(circle, #ffffff, #e9dbf8, #fcdcff, #f8c8ff, #f8c8ff);
+  }
+}
+
+
