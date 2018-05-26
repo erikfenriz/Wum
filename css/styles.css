@@ -42,6 +42,7 @@ header #upperNav {
       transition: all 500ms ease; }
     header #upperNav .brand #logo {
       color: #ff7844;
+      padding-top: 7px;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -moz-user-select: none;
