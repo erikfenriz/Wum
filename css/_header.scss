@@ -39,7 +39,7 @@ header {
     .brand {
       margin-left: $side;
       padding-left: fluidFont(55px);
-      background: url("../img/hexagons-svgrepo-com.svg") no-repeat;
+      background: url("../img/hexagons.svg") no-repeat;
       @include transition;
       &:hover {
         transform: scale(0.9);
