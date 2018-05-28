@@ -93,6 +93,21 @@ canvas {
   display: block;
   z-index: 1 !important; }
 
+.affix {
+  -webkit-transition: padding 0.2s ease-out;
+  -moz-transition: padding 0.2s ease-out;
+  -o-transition: padding 0.2s ease-out;
+  transition: padding 0.2s ease-out; }
+
+.affix-top {
+  background: transparent;
+  border-color: transparent;
+  padding: 15px;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease; }
+
 /* ---- particles.js container ---- */
 /* ---- stats.js ---- */
 
