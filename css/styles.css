@@ -14,6 +14,21 @@
   src: url("../fonts/Aller_Light/Aller_Lt.eot?") format("eot"), url("../fonts/Aller_Light/Aller_Lt.woff") format("woff"), url("../fonts/Aller_Light/Aller_Lt.ttf") format("truetype"), url("../fonts/Aller_Light/Aller_Lt.svg#Aller-Light") format("svg");
   font-weight: normal;
   font-style: normal; }
+/* For header Search Icon */
+@keyframes over {
+  0% {
+    color: #AB7C94; }
+  30% {
+    color: white; }
+  100% {
+    color: #ff7844; } }
+@keyframes out {
+  0% {
+    color: #ff7844; }
+  60% {
+    color: white; }
+  100% {
+    color: #AB7C94; } }
 header #particles-js {
   position: absolute;
   width: 100%;
@@ -52,20 +67,25 @@ header #upperNav {
       font-family: "Aller Light", Arial, Helvetica, sans-serif; }
   header #upperNav form {
     margin-right: 16%; }
-    header #upperNav form i {
-      padding-right: 22px;
-      color: #AB7C94;
-      -webkit-transition: all 500ms ease;
-      -moz-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      transition: all 500ms ease;
-      font-size: 1.6em; }
-      header #upperNav form i:hover {
-        color: white;
+    header #upperNav form button {
+      background: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+      width: 0; }
+      header #upperNav form button:focus {
+        outline: none; }
+      header #upperNav form button i.fa-search {
+        color: #AB7C94;
+        font-size: 1.8em;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
         transition: all 500ms ease; }
+      header #upperNav form button .over {
+        animation: over 0.5s ease-in forwards; }
+      header #upperNav form button .out {
+        animation: out 0.5s ease-in forwards; }
 header #divider {
   height: 0.3em;
   background-image: radial-gradient(circle, #ffffff, #e9dbf8, #fcdcff, #f8c8ff, #f8c8ff); }

@@ -1,0 +1,25 @@
+@import "palette";
+/* For header Search Icon */
+@keyframes over {
+  0% {
+    color: $color7;
+  }
+  30% {
+    color: white;
+  }
+  100% {
+    color: $color1;
+  }
+}
+
+@keyframes out {
+  0% {
+    color: $color1;
+  }
+  60% {
+    color: white;
+  }
+  100% {
+    color: $color7;
+  }
+}

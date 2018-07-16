@@ -3,6 +3,8 @@
 @import "fonts";
 @import "globalMixins";
 @import "globalFunctions";
+@import "keyframes";
+
 
 @mixin navCounters {
   color: white;
@@ -61,41 +63,27 @@ header {
     }
     form {
       margin-right: $side;
-      i {
-        padding-right: $commonPadding;
-        color: $color7;
-        @include transition;
-        font-size: fluidFont(16px);
-        &:hover {
-          color: white;
+      button {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        &:focus{
+          outline: none;
+        }
+        i.fa-search {
+          color: $color7;
+          font-size: fluidFont(18px);
           @include transition;
         }
+        .over{
+          animation: over 0.5s ease-in forwards;
+        }
+        .out{
+          animation: out 0.5s ease-in forwards;
+        }
       }
-      //a {
-      //  height: 49px;
-      //  color: #131211;
-      //  @include transition;
-      //  padding: 18px 22px 18px 22px;
-      //  background-color: #242424;
-      //  border: {
-      //    bottom: none;
-      //    top: none;
-      //    left: 1px solid #131211;
-      //    right: 1px solid #131211;
-      //    radius: 0;
-      //  }
-      //  &:hover {
-      //    color: white;
-      //    @include transition;
-      //  }
-      //  font: {
-      //    family: 'Aller Light', Arial, Helvetica, sans-serif;
-      //    size: fluidFont(11px);
-      //  }
-      //  span {
-      //    text-transform: uppercase;
-      //  }
-      //}
     }
   }
   #divider {
@@ -103,5 +91,7 @@ header {
     background-image: radial-gradient(circle, #ffffff, #e9dbf8, #fcdcff, #f8c8ff, #f8c8ff);
   }
 }
+
+
 
 

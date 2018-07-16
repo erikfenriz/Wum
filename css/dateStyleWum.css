@@ -1,0 +1,53 @@
+div.datedropper.wum-style {
+    border-radius: 16px;
+    width: 173px;
+}
+div.datedropper.wum-style .picker {
+    border-radius: 16px;
+    box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.09);
+}
+div.datedropper.wum-style .pick-l {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+div.datedropper.wum-style:before,
+div.datedropper.wum-style .pick-submit,
+div.datedropper.wum-style .pick-lg-b .pick-sl:before,
+div.datedropper.wum-style .pick-m,
+div.datedropper.wum-style .pick-lg-h {
+    background-color: #ff7844;
+}
+div.datedropper.wum-style .pick-y.pick-jump,
+div.datedropper.wum-style .pick li span,
+div.datedropper.wum-style .pick-lg-b .pick-wke,
+div.datedropper.wum-style .pick-btn {
+    color: #ff7844;
+}
+div.datedropper.wum-style .picker,
+div.datedropper.wum-style .pick-l {
+    background-color: #FFF;
+}
+div.datedropper.wum-style .picker,
+div.datedropper.wum-style .pick-arw,
+div.datedropper.wum-style .pick-l {
+    color: #b346ff;
+}
+div.datedropper.wum-style .pick-m,
+div.datedropper.wum-style .pick-m .pick-arw,
+div.datedropper.wum-style .pick-lg-h,
+div.datedropper.wum-style .pick-lg-b .pick-sl,
+div.datedropper.wum-style .pick-submit {
+    color: #FFF;
+}
+div.datedropper.wum-style.picker-tiny:before,
+div.datedropper.wum-style.picker-tiny .pick-m {
+    background-color: #FFF;
+}
+div.datedropper.wum-style.picker-tiny .pick-m,
+div.datedropper.wum-style.picker-tiny .pick-m .pick-arw {
+    color: #b346ff;
+}
+div.datedropper.wum-style.picker-lkd .pick-submit {
+    background-color: #FFF;
+    color: #b346ff;
+}
